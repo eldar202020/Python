@@ -5,11 +5,11 @@ month = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май',
 index_month = month.index(mes)
 Data_mes = {'Январь': 31, 'Февраль': 28, 'Март': 31, 'Апрель': 30, 'Май': 31, 'Июнь': 30, 'Июль': 31, 'Август': 31, 'Сентябрь': 30, 'Октябрь': 31, 'Ноябрь': 30, 'Декабрь': 31}
 if Data_mes[mes] >= data:
-        if (index_month == (0 or 1 or 11)):
+        if (index_month in (0, 1, 11)):
               sezon = "Зима"
-        elif(index_month == (2 or 3 or 4)):
+        elif(index_month in (2, 3, 4)):
               sezon = "Весна"
-        elif(index_month == (5 or 6 or 7)):
+        elif(index_month in (5, 6, 7)):
               sezon = "Лето"
         else:
               sezon = "Осень"
